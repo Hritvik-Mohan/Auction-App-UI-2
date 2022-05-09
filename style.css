@@ -55,9 +55,9 @@ input {
 
 .container{
     max-width: 70%; /*Limits the width of the container but let's it get smaller if needed.*/
-    margin: 0 auto; /*Center the container horizontally in the middle of the page.*/
+    margin: auto; /*Center the container horizontally in the middle of the page.*/
     /* padding: 12px; */
-    margin-top: 2%;
+    margin-top: 2vh;
 }
 
 .navbar {
@@ -77,8 +77,8 @@ input {
     color: var(--dark-color-lighter);
     padding: 0.75rem 2rem 0.75rem 2rem;
     display: block;
-    font-weight: 800;
-    font-size: 20px;
+    /* font-weight: 800; */
+    /* font-size: 20px; */
 }
 
 .navbar .sign-up{
@@ -117,6 +117,13 @@ input {
 @media screen and 
 (max-width: 980px) {
 
+    .container{
+        max-width: 80%; /*Limits the width of the container but let's it get smaller if needed.*/
+        margin: auto; /*Center the container horizontally in the middle of the page.*/
+        /* padding: 12px; */
+        margin-top: 2vh;
+    }
+
     .logo {
         display: none;
     }
@@ -138,6 +145,20 @@ input {
         align-items: center;
         padding: 20px;
     }
+
+    .navbar .sign-up{
+        border: 2.5px solid var(--accent-color);
+        border-radius: 1rem;
+        color: var(--accent-color);
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: inherit;
+        font-weight: 600;
+        font-size: 1.01rem;
+    }
+
     .navbar label {
         display: inline-flex;
         align-items: center;

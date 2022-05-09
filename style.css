@@ -121,7 +121,7 @@ input {
         max-width: 80%; /*Limits the width of the container but let's it get smaller if needed.*/
         margin: auto; /*Center the container horizontally in the middle of the page.*/
         /* padding: 12px; */
-        margin-top: 2vh;
+        margin-top: 4vh;
     }
 
     .logo {

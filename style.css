@@ -155,8 +155,8 @@ input {
         padding-left: 10%;
         padding-right: 10%; /*Center the container horizontally in the middle of the page.*/
         /* padding: 12px; */
-        padding-top: 4vh;
-        padding-bottom: 4vh;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
     }
 
     .logo {

@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+p {
+    margin: 0;
+}
+
 :root {
     --body-font-family: 'Roboto', sans-serif;
     --dark-color: #212427;
@@ -19,13 +23,15 @@
     --light-color: #f6f6f6;
 }
 
-
 body {
-    font-size: 16px;
-    line-height: 1.5;
+    /* font-size: 16px; */
+    /* line-height: 1.5; */
     color: var(--dark-color);
-    background: var(--body-bg-color);
+    background: var(--background-color);
     margin: 0;
+    /* padding: 0; */
+    /* box-sizing: 0; */
+    /* margin: 0; */
 }
 
 ul {
@@ -44,20 +50,39 @@ a {
     outline: none;
 }
 
+a:hover {
+    color: var(--accent-color);
+}
+
 button,
 input {
-    font: inherit;
+    /* font: inherit; */
     background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
+    opacity: 0.4;
+}
+
+.white-space{
+    /* height: 114px; */
 }
 
 .container{
-    max-width: 70%; /*Limits the width of the container but let's it get smaller if needed.*/
-    margin: auto; /*Center the container horizontally in the middle of the page.*/
+    /* max-width: 70%; */
+    /*Limits the width of the container but let's it get smaller if needed.*/
+    /* margin: auto; */
+    /*Center the container horizontally in the middle of the page.*/
     /* padding: 12px; */
-    margin-top: 2vh;
+    padding-top: 2vh;
+    position: fixed;
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: var(--background-color);
+    opacity: 95%;
+/* left: 50%; */
+/* margin-left: -37.5%; */
 }
 
 .navbar {
@@ -65,7 +90,8 @@ input {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-block: 15px; /*Padding top and bottom*/
+    padding-block: 15px; 
+    /*Padding top and bottom*/
     /* background-color: #f6f6f6; */
 }
 
@@ -85,11 +111,13 @@ input {
     border: 2px solid var(--accent-color);
     border-radius: 1rem;
     color: var(--accent-color);
+    /* opacity: 0.4 * 1.0 = 0.4 */
 }
 
 .navbar .sign-up:hover {
     background-color: var(--accent-color);
     color: var(--light-color);
+    /* opacity: 0.4 * 1.0 = 0.4; */
 }
 
 .navbar a {
@@ -123,10 +151,11 @@ input {
 (max-width: 980px) {
 
     .container{
-        max-width: 80%; /*Limits the width of the container but let's it get smaller if needed.*/
-        margin: auto; /*Center the container horizontally in the middle of the page.*/
+        width: 80%; /*Limits the width of the container but let's it get smaller if needed.*/
+        padding-left: 10%;
+        padding-right: 10%; /*Center the container horizontally in the middle of the page.*/
         /* padding: 12px; */
-        margin-top: 4vh;
+        padding-top: 4vh;
     }
 
     .logo {
